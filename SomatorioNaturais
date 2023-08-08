@@ -1,1 +1,46 @@
+//principal
+package view;
+
+import controller.SomatorioController;
+
+public class SomatorioView {
+
+	public static void main(String[] args) {
+		int natural=10;
+		
+		SomatorioController sm = new SomatorioController();
+		int res= sm.somanat(natural);
+		System.out.println(res);
+
+	}
+
+}
+
+// controller
+package controller;
+
+public class SomatorioController {
+
+	public SomatorioController() 
+	{
+		
+		super();
+		
+	}
+	public int somanat (int natural)
+	
+	{
+		if(natural<0) ////condição de parada a função deve retornar zero para números negativos)
+		{
+			return 0;
+		}
+		else
+		{
+			int n= natural-1;
+			
+			return natural+somanat(n); // Chamada da próxima função: natural + função somanat na variável n(vai pegar o valor da variável n e somar a variavel natural)
+		}
+	}
+
+}
 
