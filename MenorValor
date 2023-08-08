@@ -1,0 +1,40 @@
+//controller
+package controller;
+
+public class RetornaMenorController {
+
+	public RetornaMenorController() 
+	{
+		super();
+	}
+	public int retornaMenor(int[] vetor, int menorvalor, int valor, int tamanho, int menormenor ) 
+	{
+		if(valor== menormenor)
+		{
+			return 0;
+		}
+		else 
+		{
+			if(valor>valor)
+			{
+				valor=menormenor;
+			}
+			
+		}
+		return retornaMenor(valor);
+	}
+
+}
+
+//view
+
+package view;
+
+public class RetornaMenorView {
+
+	public static void main(String[] args) 
+	{
+		
+	}
+
+}
